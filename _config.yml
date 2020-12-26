@@ -46,36 +46,40 @@ head:
 navbar: 
 
   # 左侧名称显示
-  sitename: Demo
+  sitename: Hans362 's Blog
   
   # 右侧站内导航链接
   menu: 
     - name: 首页
       url: /
-    - name: 标签
-      url: /tags/
     - name: 归档
       url: /archives/
+    - name: 咖啡
+      url: /coffee/
     - name: 友链
-      url: /friends/
-    - name: Page
-      url: /page/
+      url: /links/
+    - name: 实验室
+      url: https://lab.hans362.cn/
+    - name: 关于
+      url: /about/
+    - name: RSS
+      url: /atom.xml
 
   # 导航栏永远显示在屏幕顶端
   # 仅当屏幕宽度不小于 1080 px 时生效
-  sticky: false
+  sticky: true
 
 # 封面 cover 设置
 cover: 
 
   # 显示在最上方 cover 处的站点名称
-  sitename: Demo
+  sitename: Hans362 's Blog
 
   # 若 avatar 配置不为空，则优先使用 avatar 覆盖 sitename
   avatar: 
   
   # sitename/avatar 下方的一句话介绍
-  description: Hi, nice to meet you!
+  description: 不以物喜，不以己悲
 
 
 
@@ -87,7 +91,7 @@ style:
 
   # 颜色配置
   color: 
-    main_color: '#eb5757'
+    main_color: '#3273dc'
 
   # 弧度设置
   radius: 
@@ -111,10 +115,10 @@ style:
   hljs: 
 
     # 默认代码高亮主题
-    default: 
+    default: atom-one-light
 
     # 暗色代码高亮主题
-    darkmode: 
+    darkmode: atom-one-dark
 
   # prismjs 代码高亮
   prismjs: 
@@ -138,8 +142,8 @@ meta:
   
   # 默认文章作者（可在front-matter中覆盖）
   author:
-    name: ChrAlpha
-    url: https://chralpha.com
+    name: Hans362
+    url: https://blog.hans362.cn/
   
   # 文章创建日期
   date:
@@ -153,27 +157,27 @@ meta:
 
   # 文章缩略图
   thumbnail: 
-    enable: false
+    enable: true
     default:   # 默认缩略图，当页面 `thumbnail` 字段为空时 fallback 至此参数
 
   # 文章过时提醒
   expire: 
-    enable: false
+    enable: true
     duration: 120  # 超过此天数则显示过期提醒
 
   # 文章自动摘要
   auto_excerpt: 
-    enable: false
+    enable: true
     length: 150
 
   # 文章目录
   toc: 
-    enable: false
+    enable: true
     list_number: false
 
   # 文章版权声明
   copyright: 
-    enable: false
+    enable: true
     
     # 在作者声明和永久链接之后，可以多行，支持 markdown
     custom_text:
@@ -366,12 +370,12 @@ footer:
 
 # 图片懒加载插件
 lazyload:
-  enable: false
+  enable: true
   loadingImage: 
 
 # 站内搜索插件
 search:
-  enable: false
+  enable: true
   path: search.json
   field: All  # Page | Post | All
 
@@ -390,10 +394,10 @@ fancybox:
   auto: false
   
 # 返回顶部
-back_to_top: false
+back_to_top: true
 
 # 深色模式
-darkmode: false
+darkmode: true
 
 
 

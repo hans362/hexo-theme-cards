@@ -2,7 +2,8 @@
 <html lang="<%= config.language%>">
     <%- partial('_partial/head/index') %>
     <body>
-        <div id="app">
+        <div class="app-shell-loader">加载中...</div>
+        <div class="container">
             <%- partial('_partial/source/cover') %>
             <%- body %>
             <%- partial('_partial/source/footer', null, {cache: !config.relative_link}) %>

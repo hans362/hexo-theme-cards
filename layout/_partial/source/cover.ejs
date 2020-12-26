@@ -1,6 +1,6 @@
 <%- partial('./header', null, {cache: false, path: path}) %>
 <% if (page.cover !== false) { %>
-    <div class="cover">
+    <cover>
         <div class="cover__logo">
             <% if (theme.cover.avatar) { %>
                 <img no-lazy alt="author Image" class="cover__avatar" src="<%= url_for(theme.cover.avatar) %>">
@@ -16,5 +16,7 @@
                 <%- markdown(theme.cover.description) %> 
             </div>
         <% } %>
-    </div>
+    </cover>
+<% } else { %>
+    <cover></cover>
 <% } %>
