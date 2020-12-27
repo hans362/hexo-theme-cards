@@ -26,7 +26,6 @@
             </svg>
         </a>
         <div class="toc-menus" id="toc-menus">
-            <div class="toc-title"><%= __('post.toc') %></div>
             <%- toc(page.content, {list_number: (theme.meta.toc.list_number || false), max_depth: 6, min_depth: 2}) %>
         </div>
     <% } %>

@@ -1,7 +1,7 @@
 <% if (theme.meta.thumbnail.enable === true && (post.thumbnail || theme.meta.thumbnail.default)) { %>
     <% if (theme.lazyload && theme.lazyload.enable === true) { %>
-        <div class="post-thumbnail lazy" data-bg="<%= post.thumbnail || theme.meta.thumbnail.default %>"></div>
+        <img alt="Cover Image" class="lazy" src="<%= post.thumbnail || theme.meta.thumbnail.default %>" data-srcset="<%= post.thumbnail || theme.meta.thumbnail.default %>">
     <% } else { %>
-        <div class="post-thumbnail" style="background-image: url('<%= post.thumbnail || theme.meta.thumbnail.default %>');"></div>
+        <img alt="Cover Image" src="<%= post.thumbnail || theme.meta.thumbnail.default %>">
     <% } %>
 <% } %>
