@@ -8,7 +8,9 @@
         <% if (theme.navbar.menu && theme.navbar.menu.forEach) { %>
             <div class="navbar__menus">
                 <% theme.navbar.menu.forEach((item) => { %>
-                    <a href="<%= url_for(item.url) %>" class="button"><%= item.name %></a>
+                    <a href="<%= url_for(item.url) %>" class="button">
+                        <div class="navbar-menu"><%= item.name %></div>
+                    </a>
                 <% }); %>
             </div>
         <% } %>
