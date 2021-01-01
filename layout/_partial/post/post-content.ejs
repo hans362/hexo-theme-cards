@@ -15,8 +15,8 @@
 
     <% if (theme.meta.toc.enable && page.toc !== false) { %>
         <aside class="post-side">
-            <div class="toc-title"><%= __('post.toc') %></div>
             <div class="post-side__toc">
+                <div class="toc-title"><%= __('post.toc') %></div>
                 <%- toc(page.content, {list_number: (theme.meta.toc.list_number || false), max_depth: 6, min_depth: 2}) %>
             </div>
         </aside>
@@ -26,6 +26,7 @@
             </svg>
         </a>
         <div class="toc-menus" id="toc-menus">
+            <div class="toc-title"><%= __('post.toc') %></div>
             <%- toc(page.content, {list_number: (theme.meta.toc.list_number || false), max_depth: 6, min_depth: 2}) %>
         </div>
     <% } %>
@@ -80,7 +81,7 @@
     <% } %>
 
     <% if (theme.comments.use && page.comments !== false) { %>
-        <div class="post__comments content-card" id="comment">
+        <div class="post__comments card" id="comment">
             <%- partial('_plugins/comments/placeholder') %>
         </div>
     <% } %>
