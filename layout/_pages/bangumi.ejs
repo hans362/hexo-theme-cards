@@ -1,15 +1,14 @@
 <% if (page.apiurl && page.userid) { %>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bilibili-bangumi-js/dist/bilibili-bangumi.css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1"></script> <script> var apiUrl = "<%= page.apiurl %>"; var userId = "<%= page.userid %>"; </script> <script src="https://cdn.jsdelivr.net/npm/bilibili-bangumi-js/dist/bilibili-bangumi.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1"></script>
+<script> var apiUrl = "<%= page.apiurl %>"; var userId = "<%= page.userid %>"; </script>
+<script src="https://cdn.jsdelivr.net/npm/bilibili-bangumi-js/dist/bilibili-bangumi.js"></script>
 <main class="main links">
-    <div class="links-list">
-        <div class='links-content'>
-	    <div class="bgm-container">
-		<div class="bgm-collection" id="bgm-collection">
-                    <img style="margin: 0 auto;" src="https://cdn.jsdelivr.net/gh/hans362/Bilibili-Bangumi-JS/assets/bilibili.gif">
-                </div>
-            </div>
-	</div>
+    <div class="bgm-container">
+        <div class="bgm-collection" id="bgm-collection">
+            <img style="margin: 0 auto;"
+                src="https://cdn.jsdelivr.net/gh/hans362/Bilibili-Bangumi-JS/assets/bilibili.gif">
+        </div>
     </div>
 </main>
 <% } %>
