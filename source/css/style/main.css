@@ -238,6 +238,7 @@ hr:after {
 
 input {
     font: inherit;
+    color: var(--ic);
     margin: 0;
     overflow: visible;
     font-family: inherit;
