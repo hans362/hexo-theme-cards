@@ -1,6 +1,6 @@
 <% if (theme.meta.thumbnail.enable === true && (post.thumbnail || theme.meta.thumbnail.default)) { %>
     <% if (theme.lazyload && theme.lazyload.enable === true) { %>
-        <img alt="Cover Image" class="lazy" src="<%= post.thumbnail || theme.meta.thumbnail.default %>" data-srcset="<%= post.thumbnail || theme.meta.thumbnail.default %>">
+        <img alt="Cover Image" class="lazy" src="<%= post.thumbnail || theme.meta.thumbnail.default %>" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" data-srcset="<%= post.thumbnail || theme.meta.thumbnail.default %>">
     <% } else { %>
         <img alt="Cover Image" src="<%= post.thumbnail || theme.meta.thumbnail.default %>">
     <% } %>
