@@ -87,7 +87,8 @@ style:
 
   # 颜色配置
   color: 
-    main_color: '#eb5757'
+    main_color: '#6200ee'
+    main_color_dark: '#bb86fc'
 
   # 弧度设置
   radius: 
@@ -311,6 +312,9 @@ analytics:
   baidu_site_id: 
   cnzz_site_id: 
   cloudflare_site_id: 
+  umami:
+    id:
+    url:
 
 
 
@@ -399,6 +403,11 @@ back_to_top: false
 
 # 深色模式
 darkmode: false
+
+# Mermaid Diagrams
+mermaid: 
+  enable: false
+  options: 
 
 
 
@@ -498,6 +507,11 @@ vendors:
   katex: 
     css: 
     js: 
+
+  # Mermiad Disgrams
+  # https://mermaid-js.github.io/
+  # Version 8.10.2
+  mermaid: 
 
   # busuanzi counter js
   # https://busuanzi.ibruce.info
