@@ -1076,7 +1076,7 @@ header .header__right .dropdown-menus .dropdown-menu {
 }
 
 @media screen and (max-width: 1079px) {
-    .post-content .nav,.post-content .post,.post-content .post__comments {
+    .post-content .nav,.post-content .post,.post-content .post__sponsers,.post-content .post__comments {
         margin-left:0!important
     }
 }

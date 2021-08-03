@@ -88,6 +88,12 @@
     </div>
     <% } %>
 
+    <% if (theme.sponsers.use && page.sponsers !== false) { %>
+    <div class="post__sponsers card">
+        <%- partial('_plugins/sponsers/source') %>
+    </div>
+    <% } %>
+
     <% if (theme.comments.use && page.comments !== false) { %>
     <div class="post__comments<% if (theme.meta.toc.enable && page.toc !== false) { %> post__with-toc<% } %> card"
         id="comment">
