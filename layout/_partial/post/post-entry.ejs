@@ -20,7 +20,7 @@
 <% if (post.title) { %>
 <div class="post-entry__meta">
     <%- partial('_meta/date') %>
-    <%- partial('_meta/categories') %> 
+    <%- partial('_meta/category') %> 
 </div>
 <a href="<%= url_for(post.link || post.path) %>" class="post-entry__link"><%= post.title || theme.meta.title %></a>
 <% } %>
