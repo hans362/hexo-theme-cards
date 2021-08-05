@@ -23,7 +23,7 @@ post:
   next: 下一篇
   toc: 文章目录
   copyright: 
-    author: '本文作者：'
+    author: '本文作者'
     permalink: '本文链接：'
   expire: "本文最后更新于 %s 天前，文中部分描述可能已经过时。"
 symbol:
