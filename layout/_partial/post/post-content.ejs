@@ -88,7 +88,7 @@
     </div>
     <% } %>
 
-    <% if (theme.sponsers.use && page.sponsers !== false) { %>
+    <% if (theme.sponsers.use && theme.sponsers.use.length && theme.sponsers.label && page.sponsers !== false) { %>
     <div class="post__sponsers card">
         <%- partial('_plugins/sponsers/source') %>
     </div>

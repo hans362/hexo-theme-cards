@@ -1,5 +1,11 @@
 <div class="sponser-label">
     <%= theme.sponsers.label %>
 </div>
-<a class="sponser-button button" href="<%= theme.sponsers.url %>" rel="external nofollow noreferrer"
-    target="_blank"><%= theme.sponsers.use %></a>
+<% for(let i = 0; i < theme.sponsers.use.length; ++i) { %>
+<% if (theme.sponsers.use[i].url) { %>
+<a class="sponser-button button" href="<%= theme.sponsers.use[i].url %>" rel="external nofollow noreferrer"
+    target="_blank" data-type="<%= theme.sponsers.use[i].button %>"><%= theme.sponsers.use[i].name %></a>
+<% } else if (theme.sponsers.use[i].qrcode) { %>
+<a class="sponser-button button" data-type="<%= theme.sponsers.use[i].button %>"><%= theme.sponsers.use[i].name %><img class="sponser-qrcode" src="<%= theme.sponsers.use[i].qrcode %>"></a>
+<% } %>
+<% } %>
