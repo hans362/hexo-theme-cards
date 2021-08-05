@@ -1644,6 +1644,67 @@ details .fold-content>:last-child {
     color: #fff
 }
 
+.sponser-button[data-type="afdian"] {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+    height: 2.5em;
+    line-height: 1.5;
+    padding: .5em .75em;
+    background-color: #946ce6;
+    color: #fff
+}
+
+.sponser-button[data-type="alipay"] {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+    height: 2.5em;
+    line-height: 1.5;
+    padding: .5em .75em;
+    background-color: #00a0e8;
+    color: #fff
+}
+
+.sponser-button[data-type="wepay"] {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+    height: 2.5em;
+    line-height: 1.5;
+    padding: .5em .75em;
+    background-color: #1aad19;
+    color: #fff
+}
+
+.sponser-qrcode {
+    position: absolute;
+	z-index: 99;
+	top: -135px;
+	left: -25%;
+	width: 7.5rem;
+	max-width: none;
+	height: 7.5rem;
+	-webkit-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transform-origin: bottom center;
+	        transform-origin: bottom center;
+	opacity: 0;
+	border: .1rem solid #ffffff;
+	border-radius: .25rem;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.sponser-button:hover .sponser-qrcode {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+	opacity: 1;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --color-mode:'dark'
