@@ -1768,6 +1768,24 @@ details .fold-content>:last-child {
         color: rgba(255,255,255,.5)
     }
 
+    :root:not([data-user-color-scheme]) .post-entry__content a:not(.article-anchor) {
+        border-bottom: 2px solid rgba(255,193,37,.5);
+    }
+
+    :root:not([data-user-color-scheme]) .post__content a:not(.article-anchor) {
+        border-bottom: 2px solid rgba(255,193,37,.5);
+    }
+    
+    :root:not([data-user-color-scheme]) .post-entry__content a:not(.article-anchor):hover {
+        -webkit-box-shadow: inset 0 -8.8px rgba(255,193,37,.5);
+                box-shadow: inset 0 -8.8px rgba(255,193,37,.5)
+    }
+
+    :root:not([data-user-color-scheme]) .post__content a:not(.article-anchor):hover {
+        -webkit-box-shadow: inset 0 -8.8px rgba(255,193,37,.5);
+                box-shadow: inset 0 -8.8px rgba(255,193,37,.5)
+    }
+
     :root:not([data-user-color-scheme]) .post__license {
         background-color: rgba(255,255,255,.2)
     }
@@ -1811,19 +1829,20 @@ details .fold-content>:last-child {
     color: rgba(255,255,255,.5)
 }
 
-[data-user-color-scheme=dark] .post-entry__content a:not(.article-anchor),.post__content a:not(.article-anchor) {
-    background-color: initial;
-    color: currentColor!important;
+[data-user-color-scheme=dark] .post-entry__content a:not(.article-anchor) {
     border-bottom: 2px solid rgba(255,193,37,.5);
-    text-decoration: none!important
 }
 
-[data-user-color-scheme=dark] .post-entry__content a:not(.article-anchor):hover,.post__content a:not(.article-anchor):hover {
-    opacity: 1;
-    -webkit-transition: -webkit-box-shadow .2s linear;
-    transition: -webkit-box-shadow .2s linear;
-    transition: box-shadow .2s linear;
-    transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
+[data-user-color-scheme=dark] .post__content a:not(.article-anchor) {
+    border-bottom: 2px solid rgba(255,193,37,.5);
+}
+
+[data-user-color-scheme=dark] .post-entry__content a:not(.article-anchor):hover {
+    -webkit-box-shadow: inset 0 -8.8px rgba(255,193,37,.5);
+            box-shadow: inset 0 -8.8px rgba(255,193,37,.5)
+}
+
+[data-user-color-scheme=dark] .post__content a:not(.article-anchor):hover {
     -webkit-box-shadow: inset 0 -8.8px rgba(255,193,37,.5);
             box-shadow: inset 0 -8.8px rgba(255,193,37,.5)
 }
