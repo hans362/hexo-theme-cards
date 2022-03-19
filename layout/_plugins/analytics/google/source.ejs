@@ -1,7 +1,8 @@
 <% if (theme.analytics && theme.analytics.google_site_id) { %> 
     <script>
-    window.ga_tid = "<%= theme.analytics.google_site_id %>";
-    window.ga_api = "https://ga.0vv0.top/";
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', '<%= theme.analytics.google_site_id %>', 'auto');
+        ga('send', 'pageview');
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.3" async></script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
 <% } %> 
