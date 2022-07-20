@@ -3,7 +3,7 @@
     <%- partial('_partial/head/index') %>
     <body>
         <div class="app-shell-loader">加载中...</div>
-        <div class="container">
+        <div class="container" tabindex="-1">
             <%- partial('_partial/source/cover') %>
             <%- body %>
             <%- partial('_partial/source/footer', null, {cache: !config.relative_link}) %>
