@@ -2,7 +2,8 @@
     <script defer="defer" src="<%= theme.vendors.lazyload || 'https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.3/dist/lazyload.min.js' %>"></script>
     <script>
         window.lazyLoadOptions = {
-            elements_selector: ".lazy"
+            elements_selector: ".lazy",
+            cancel_on_exit: false
         };
     </script>
 <% } %>
