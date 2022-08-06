@@ -11,6 +11,10 @@
       };
     });
 
+  pvCounterElements[document.location.pathname] = {
+    ele: document.querySelector("main > .post-content > .post-title > .post-title__meta .post-meta__pv"),
+  };
+
   const query = Object.keys(pvCounterElements).join(",");
   const json = await fetch(
     `https://analytics.0vv0.top/api/pageviews?pages=${query}`
@@ -20,8 +24,9 @@
     const ele = pvCounterElements[uri] && pvCounterElements[uri].ele;
 
     if (ele !== undefined && ele !== null) {
-      ele.innerHTML = json.data[uri] + " Views";
-      ele.parentElement.style.opacity = 1;
+      ele.innerHTML = json.data[uri] + " views";
+      ele.style.visibility = 'visible'
+      ele.style.opacity = 1;
     }
   }
 })();
