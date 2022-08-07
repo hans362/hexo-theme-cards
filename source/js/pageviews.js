@@ -24,7 +24,7 @@
     const ele = pvCounterElements[uri] && pvCounterElements[uri].ele;
 
     if (ele !== undefined && ele !== null) {
-      ele.innerHTML = json.data[uri] + " views";
+      ele.innerHTML = json.data[uri] + " 次浏览";
       ele.style.visibility = 'visible'
       ele.style.opacity = 1;
     }
