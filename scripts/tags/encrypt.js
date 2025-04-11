@@ -29,7 +29,7 @@ hexo.extend.tag.register(
     <div class="encrypt card" style="text-align:center;">
       <div style="font-size:1.1rem;">🔐 内容受密码保护</div>
       <p style="font-size:0.8rem;">密码提示：${hint}</p>
-      <form class="search-form">
+      <form class="search-form" onsubmit="decrypt(this.querySelector('a'));return false;">
         <input type="password" class="password search-input" placeholder="请输入密码" />
         <input type="hidden" class="cipher" value="${cipher}" />
         <a onclick="decrypt(this)" style="margin-left: .35em; margin-right: .35em">解密</a>
