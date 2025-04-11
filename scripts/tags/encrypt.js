@@ -27,11 +27,13 @@ hexo.extend.tag.register(
     const cipher = aes_encrypt(key, iv, text);
     return `
     <div class="encrypt card" style="text-align:center;">
-      <div style="font-size:1.1rem;">内容受密码保护</div>
+      <div style="font-size:1.1rem;">🔐 内容受密码保护</div>
       <p style="font-size:0.8rem;">密码提示：${hint}</p>
-      <input type="password" class="password" placeholder="请输入密码" />
-      <input type="hidden" class="cipher" value="${cipher}" />
-      <a onclick="decrypt(this)" class="post-cats__link button" style="margin: .35em;font-size: .9em;text-decoration: none;background-color: var(--bg-ca);color: currentColor !important;padding: .25rem .6rem .25rem .6rem;border-radius: 5px;">解密</a>
+      <form class="search-form">
+        <input type="password" class="password search-input" placeholder="请输入密码" />
+        <input type="hidden" class="cipher" value="${cipher}" />
+        <a onclick="decrypt(this)" style="margin-left: .35em; margin-right: .35em">解密</a>
+      </form>
     </div>
   `;
   },

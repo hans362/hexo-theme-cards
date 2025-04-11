@@ -25,9 +25,9 @@ hexo.extend.filter.register("after_post_render", (data) => {
       const cipherBuffer = Uint8Array.from(cipher.match(/.{1,2}/g).map((byte) => parseInt(byte, 16)));
       try {
         const decrypted = await aes_decrypt(key, iv, cipherBuffer);
-        el.parentNode.style.textAlign = 'left';
-        el.parentNode.classList.remove('card');
-        el.parentNode.innerHTML = decrypted;
+        el.parentNode.parentNode.style.textAlign = 'left';
+        el.parentNode.parentNode.classList.remove('card');
+        el.parentNode.parentNode.innerHTML = decrypted;
       } catch (e) {
         alert('密码错误！');
       }
